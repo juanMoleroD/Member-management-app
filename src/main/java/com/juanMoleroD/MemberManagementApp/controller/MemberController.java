@@ -1,5 +1,7 @@
-package com.juanMoleroD.MemberManagementApp;
+package com.juanMoleroD.MemberManagementApp.controller;
 
+import com.juanMoleroD.MemberManagementApp.repository.MemberRepository;
+import com.juanMoleroD.MemberManagementApp.model.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

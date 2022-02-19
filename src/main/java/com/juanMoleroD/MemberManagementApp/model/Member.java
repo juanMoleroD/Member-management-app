@@ -1,4 +1,4 @@
-package com.juanMoleroD.MemberManagementApp;
+package com.juanMoleroD.MemberManagementApp.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

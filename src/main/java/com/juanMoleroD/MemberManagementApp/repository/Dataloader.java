@@ -1,5 +1,6 @@
-package com.juanMoleroD.MemberManagementApp;
+package com.juanMoleroD.MemberManagementApp.repository;
 
+import com.juanMoleroD.MemberManagementApp.model.Member;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
