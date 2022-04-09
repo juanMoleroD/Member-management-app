@@ -13,18 +13,23 @@
     <h2>Member Table</h2>
 
     <table>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Is premium?</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Is premium?</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+
         <th:block th:each="member : ${members}">
             <tr>
                 <td th:text="${member.memberId}"></td>
                 <td th:text="${member.name}"></td>
                 <td th:text="${member.surname}"></td>
                 <td th:text="${member.isPremium}"></td>
+                <td>a</td>
             </tr>
         </th:block>
     </table>
