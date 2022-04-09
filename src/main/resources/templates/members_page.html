@@ -5,37 +5,40 @@
     <title>Member Management Page</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.bundle.js"></script>
+
 
 </head>
 <body>
 
-<h2>Member Table</h2>
+    <h2>Member Table</h2>
 
-<table>
-    <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Surname</th>
-        <th>Is premium?</th>
-    </tr>
-    <th:block th:each="member : ${members}">
+    <table>
         <tr>
-            <td th:text="${member.memberId}"></td>
-            <td th:text="${member.name}"></td>
-            <td th:text="${member.surname}"></td>
-            <td th:text="${member.isPremium}"></td>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Is premium?</th>
         </tr>
-    </th:block>
-</table>
-<p></p>
-<form method="post" action="/members/addMember" th:object="${member}">
-    <input type="text" name="memberId" placeholder="Enter id">
-    <input type="text" name="name" placeholder="Enter Name">
-    <input type="text" name="surname" placeholder="Enter Surname">
-    <input type="text" name="isPremium" value="Premium true or false">
-    <input type="submit" value="add new member">
-</form>
+        <th:block th:each="member : ${members}">
+            <tr>
+                <td th:text="${member.memberId}"></td>
+                <td th:text="${member.name}"></td>
+                <td th:text="${member.surname}"></td>
+                <td th:text="${member.isPremium}"></td>
+            </tr>
+        </th:block>
+    </table>
+    <p></p>
+    <form method="post" action="/members/addMember" th:object="${member}">
+        <input type="text" name="memberId" placeholder="Enter id">
+        <input type="text" name="name" placeholder="Enter Name">
+        <input type="text" name="surname" placeholder="Enter Surname">
+        <input type="text" name="isPremium" value="Premium true or false">
+        <input type="submit" value="add new member">
+    </form>
 
+
+
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
