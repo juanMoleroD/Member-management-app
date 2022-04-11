@@ -17,9 +17,9 @@ class DataLoader {
     @PostConstruct
     private void loadData() {
         repository.saveAll(List.of(
-                new Member("1001", "Juan", "Molero", true),
-                new Member("1002", "Diego", "Molero", false),
-                new Member("1003", "Maria", "Molero", true)
+                new Member("1001", "Juan", "Molero"),
+                new Member("1002", "Diego", "Molero"),
+                new Member("1003", "Maria", "Molero")
         ));
     }
 }
